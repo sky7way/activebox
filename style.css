@@ -3,7 +3,7 @@ body {
     font-family: 'Raleway', sans-serif;
     font-size: 14px;
     color: #6c7279;
-    background-color: aquamarine;
+    background-color: #fff;
 }
 
 *,
@@ -12,7 +12,15 @@ body {
     box-sizing: border-box;
 }
 
-a{
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+a {
     text-decoration: none;
 }
 
@@ -29,7 +37,12 @@ a{
 ==============================*/
 
 .header {
-
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 .header__inner {
@@ -59,4 +72,68 @@ a{
 .nav__link:hover {
     /*text-decoration: underline;*/
     opacity: 1;
+}
+
+/*Intro
+==============================*/
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 100px;
+    height: 750px;
+    background: center / cover no-repeat #31344e url("/images/intro-bg.jpg");
+}
+
+.intro__inner {
+    width: 100%;
+    max-width: 970px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.intro__title {
+    margin: 0 0 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 65px;
+    line-height: 1.1;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+}
+
+.intro__subtitle {
+    margin-bottom: 60px;
+    font-size: 22px;
+    color: #fff;
+    line-height: 1.5;
+    font-weight: 400;
+    text-align: center;
+}
+
+/*Button
+==============================*/
+
+.button {
+    vertical-align: top;
+    padding: 14px 40px;
+    border-radius: 2px;
+    border: 0;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background .1s linear;
+}
+
+.button--red {
+    margin: 0 auto;
+    background-color: #e84545;
+}
+
+.button--red:hover {
+    background-color: #e23131;
 }
