@@ -127,6 +127,7 @@ a {
     color: #fff;
     font-weight: 600;
     text-decoration: none;
+    text-align: center;
     transition: background .1s linear;
 }
 
@@ -137,6 +138,10 @@ a {
 
 .button--red:hover {
     background-color: #e23131;
+}
+
+.button--long {
+    min-width: 280px;
 }
 
 /*Features
@@ -302,6 +307,77 @@ a {
     background-color: #e8ecee;;
 }
 
+/*Reviews
+==============================*/
 
+.reviews {
+    background-color: #53354a;
+    overflow: hidden;
+}
 
+.reviews__item {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.reviews__photo {
+    width: 50%;
+    height: 500px;
+    position: relative;
+}
+
+.reviews__image {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 1;
+    transform: translateY(-50%);
+}
+
+.reviews__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    padding-left: 80px;
+}
+
+.reviews__text {
+    font-family: "Cardo", sans-serif;
+    font-style: italic;
+    font-size: 36px;
+    line-height: 1.2;
+    color: #fff;
+    margin-bottom: 24px;
+}
+
+.reviews__author {
+    font-size: 13px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/*Download
+==============================*/
+
+.download {
+    margin: 90px 0;
+    text-align: center;
+}
+
+.download__title {
+    margin-bottom: 8px;
+    font-size: 28px;
+    font-weight: 300;
+    color: #2d3033;
+}
+
+.download__text {
+    margin-bottom: 32px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #2d3033;
+    text-transform: uppercase;
+}
 
