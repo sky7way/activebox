@@ -297,6 +297,7 @@ a {
     width: 40px;
     height: 40px;
     border: 1px solid #e8ecee;
+    fill: #515369;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -306,6 +307,17 @@ a {
 .social__item:hover {
     background-color: #e8ecee;;
 }
+
+.social__item:hover .social__icon{
+    fill: #3a3e64;
+}
+
+.social__icon {
+    height: 16px;
+    fill: #c6cacc;
+    transition: fill .15s linear;
+}
+
 
 /*Reviews
 ==============================*/
@@ -381,3 +393,27 @@ a {
     text-transform: uppercase;
 }
 
+/*Footer
+==============================*/
+
+.footer {
+    padding: 70px 0;
+    background-color: #3a3e64;
+}
+
+.footer__inner {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__item {
+    width: 33.3333%;
+    text-align: center;
+}
+
+.footer__title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+}
