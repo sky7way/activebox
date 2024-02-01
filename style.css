@@ -416,11 +416,11 @@ a {
 ==============================*/
 
 .footer {
-    padding: 70px 0;
     background-color: #3a3e64;
 }
 
 .footer__inner {
+    padding: 70px 0;
     display: flex;
     flex-wrap: wrap;
 }
@@ -451,3 +451,29 @@ a {
     margin-bottom: 0;
 }
 
+/*Copyright
+==============================*/
+
+.copyright {
+    padding: 20px 0;
+    background-color: #313454;
+}
+
+.copyright__text {
+    font-size: 14px;
+    text-align: center;
+    color: #808080;
+    line-height: 1.5;
+}
+
+.copyright__text p {
+    margin-bottom: 0;
+}
+
+.copyright__text .copyright__heart {
+
+}
+
+.copyright__text span {
+    color: #fff;
+}
