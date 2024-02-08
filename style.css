@@ -483,9 +483,9 @@ a {
     margin-bottom: 0;
 }
 
-.copyright__text .copyright__heart {
+/* .copyright__text .copyright__heart {
 
-}
+} */
 
 .copyright__text span {
     color: #fff;
@@ -550,6 +550,22 @@ a {
 
     .nav {
         display: none;
+        width: 100%;
+        position: absolute;
+        text-align: right;
+        background-color:#31344e;
+        top: 100%;
+        right: 0;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .nav.show {
+        display: flex;
+    }
+
+    .nav__link {
+        padding: 0 15px;
     }
 
     /*Intro*/
